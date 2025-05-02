@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #e6fffa, #f0fdfa);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6fffa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,31 +10,21 @@ body {
 
 .quiz-container {
   background-color: #ffffff;
-  padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 520px;
+  max-width: 500px;
   text-align: center;
-  animation: fadeIn 0.6s ease-in-out;
 }
 
 h1 {
   color: #2c7a7b;
-  margin-bottom: 10px;
-  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 h2 {
   color: #285e61;
-  font-size: 22px;
-  margin-bottom: 16px;
-}
-
-.progress {
-  color: #2c7a7b;
-  font-weight: 600;
-  margin-bottom: 10px;
 }
 
 ul {
@@ -46,13 +34,12 @@ ul {
 
 li {
   background-color: #edfdfd;
-  padding: 14px;
+  padding: 12px;
   margin: 10px 0;
   border: 2px solid transparent;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  font-size: 16px;
 }
 
 li:hover {
@@ -66,25 +53,16 @@ li.selected {
   border-color: #319795;
 }
 
-li.disabled {
-  pointer-events: none;
-  opacity: 0.6;
-}
-
 button {
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: #319795;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: 600;
-  transition: background-color 0.3s ease-in-out;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -95,15 +73,4 @@ button:hover {
   font-size: 18px;
   color: #234e52;
   margin: 8px 0;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
